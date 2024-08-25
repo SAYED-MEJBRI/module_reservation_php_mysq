@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<!-- saved from url=(0089)http://localhost/Module_R%c3%a9servation/index.php?room_id=&start_date=2024-08-30&pays=78 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Inclusion des fichiers CSS de Bootstrap -->
+	 <link rel="stylesheet" href="./index_files/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	 
+	
+		<script src="./index_files/bootstrap.bundle.min.js.téléchargement" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+		<link href="./index_files/bootstrap(1).min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+		<link rel="stylesheet" href="./index_files/cssHeader.asset.css"> 
+		<link rel="stylesheet" href="./index_files/cssCalendrier.asset.css">
+		<link rel="stylesheet" href="./index_files/cssGeneral.asset.css">
+		
+
+
+</head>
+
+        <!-- En-tête de page contient un logo et une barre de navigation  qui va etre transformer en -->
+    <body><header class=" mw-1320 m-auto d-flex jc-sb ai-c">
+        <div class="header_logo">
+            <img src="./index_files/logo fond bleu.webp" alt="logo" width="100">
+        </div>
+        <input id="menu-toggle" type="checkbox">
+        <label class="menu-button-container " for="menu-toggle">
+            <div class="menu-button ">
+                <img src="./index_files/bars-solid.svg" height="30" alt="burger menu">
+            </div>
+        </label>
+        <ul class="menu d-flex ">
+
+
+
+
+                            <li class="">
+                    <a class="nav-link" href="http://localhost/Module_R%c3%a9servation/Views/loginUser.php">Connexion</a>
+                </li>
+                <li class="">
+                    <a class="nav-link" href="http://localhost/Module_R%c3%a9servation/Views/registerUser.view.php">Inscription</a>
+                </li>
+                    </ul>
+
+    </header>
+
+        <div class="mw-1320 m-auto">
+        <section class="my-3 sec1">
+            <h1 class="my-3">   Réserver maintenant </h1>
+
+        </section>
+    </div>
+    <section class=" sec2 p-2 ">
+        <div class="my-3">
+            <form action="http://localhost/Module_R%c3%a9servation/index.php" method="get">
+                <div class="d-flex g-1 fw-wrap jc-se  ai-c mw-1320 m-auto">
+                    <div class="">
+                        <input type="hidden" name="room_id" value="">
+                      
+
+                        <label for="start_date">Date :</label>
+                        <input type="date" name="start_date" id="start_date" class="" value="2024-08-30">
+                    </div>
+                    <div class="">
+                        <label for="pays">salle :</label>
+                        <select id="pays" name="pays">
+                          
+                            <option value="78">Banuwa </option>                            <option value="79"> L'Atemporelle</option>                            <option value="80"> Soleil d'Or</option>                            <option value="81">Shambaya</option>                                                        &gt;
+                        </select>
+                    </div>
+                    <div class="">
+                        <button type="submit" class="">Afficher</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <section class="partie3 p-2 ">
+        <div class="mw-1320 m-auto">
+            <div class="d-flex g-1 fw-wrap ac-c my-3">
+                <div class="desc f-1-280  ">
+                    
+                        <h2>
+                        <strong>    Banuwa   </strong>
+                        </h2>
+                        <!-- <p> Salon de soin de 12 m2, ambiance     "ethnique" cocoonante.
+
+ Équipé de fauteuils, bureau et table de   massage.</p> -->
+                  
+                    <div class="my-1 ">
+                                                <img src="./index_files/banuwa_1688091645.webp" width="300" height="350" alt="hoto de salle">
+                    </div>
+                </div>
+                <div class="f-2-560 my-1">
+                    
+        <div class=" ">
+            <h2>Calendrier du salon Banuwa </h2>
+
+
+            <div class=" ">
+
+                <div class="">
+                    <form action="http://localhost/Module_R%c3%a9servation/Controllers/CRUDReservation.controller.php" method="post">
+
+                        <div class=" d-flex  fw-wrap jc-se  g-1 my-3">
+                                                            <div class="calendar-box ">
+                                    <div class="time">09:00:00</div>
+                                    <label class="status" style="display: block;">
+                                            <p>disponible</p><p>
+                                        <input class="selectHour" type="checkbox" name="selected_slots[]" value="2024-08-30 09:00:00">
+                                                                        </p></label></div>
+                                                            <div class="calendar-box ">
+                                    <div class="time">09:30</div>
+                                    <label class="status" style="display: block;">
+                                            <p>disponible</p><p>
+                                        <input class="selectHour" type="checkbox" name="selected_slots[]" value="2024-08-30 09:30">
+                                                                        </p></label></div>
+                                                            <div class="calendar-box ">
+                                    <div class="time">10:00</div>
+                                    <label class="status" style="display: block;">
+                                            <p>disponible</p><p>
+                                        <input class="selectHour" type="checkbox" name="selected_slots[]" value="2024-08-30 10:00">
+                                                                        </p></label></div>
+                                                            <div class="calendar-box ">
+                                    <div class="time">10:30</div>
+                                    <label class="status" style="display: block;">
+                                            <p>disponible</p><p>
+                                        <input class="selectHour" type="checkbox" name="selected_slots[]" value="2024-08-30 10:30">
+                                                                        </p></label></div>
+                                                            <div class="calendar-box ">
+                                    <div class="time">11:00</div>
+                                    <label class="status" style="display: block;">
+                                            <p>disponible</p><p>
+                                        <input class="selectHour" type="checkbox" name="selected_slots[]" value="2024-08-30 11:00">
+                                                                        </p></label></div>
+                                                            <div class="calendar-box ">
+                                    <div class="time">11:30</div>
+                                    <label class="status" style="display: block;">
+                                            <p>disponible</p><p>
+                                        <input class="selectHour" type="checkbox" name="selected_slots[]" value="2024-08-30 11:30">
+                                                                        </p></label></div>
+                                                            <div class="calendar-box ">
+                                    <div class="time">12:00</div>
+                                    <label class="status" style="display: block;">
+                                            <p>disponible</p><p>
+                                        <input class="selectHour" type="checkbox" name="selected_slots[]" value="2024-08-30 12:00">
+                                                                        </p></label></div>
+                                                            <div class="calendar-box ">
+                                    <div class="time">12:30</div>
+                                    <label class="status" style="display: block;">
+                                            <p>disponible</p><p>
+                                        <input class="selectHour" type="checkbox" name="selected_slots[]" value="2024-08-30 12:30">
+                                                                        </p></label></div>
+                                                            <div class="calendar-box ">
+                                    <div class="time">13:00</div>
+                                    <label class="status" style="display: block;">
+                                            <p>disponible</p><p>
+                                        <input class="selectHour" type="checkbox" name="selected_slots[]" value="2024-08-30 13:00">
+                                                                        </p></label></div>
+                                                            <div class="calendar-box ">
+                                    <div class="time">13:30</div>
+                                    <label class="status" style="display: block;">
+                                            <p>disponible</p><p>
+                                        <input class="selectHour" type="checkbox" name="selected_slots[]" value="2024-08-30 13:30">
+                                                                        </p></label></div>
+                                                            <div class="calendar-box ">
+                                    <div class="time">14:00</div>
+                                    <label class="status" style="display: block;">
+                                            <p>disponible</p><p>
+                                        <input class="selectHour" type="checkbox" name="selected_slots[]" value="2024-08-30 14:00">
+                                                                        </p></label></div>
+                                                            <div class="calendar-box ">
+                                    <div class="time">14:30</div>
+                                    <label class="status" style="display: block;">
+                                            <p>disponible</p><p>
+                                        <input class="selectHour" type="checkbox" name="selected_slots[]" value="2024-08-30 14:30">
+                                                                        </p></label></div>
+                                                            <div class="calendar-box ">
+                                    <div class="time">15:00</div>
+                                    <label class="status" style="display: block;">
+                                            <p>disponible</p><p>
+                                        <input class="selectHour" type="checkbox" name="selected_slots[]" value="2024-08-30 15:00">
+                                                                        </p></label></div>
+                                                            <div class="calendar-box ">
+                                    <div class="time">15:30</div>
+                                    <label class="status" style="display: block;">
+                                            <p>disponible</p><p>
+                                        <input class="selectHour" type="checkbox" name="selected_slots[]" value="2024-08-30 15:30">
+                                                                        </p></label></div>
+                                                            <div class="calendar-box ">
+                                    <div class="time">16:00</div>
+                                    <label class="status" style="display: block;">
+                                            <p>disponible</p><p>
+                                        <input class="selectHour" type="checkbox" name="selected_slots[]" value="2024-08-30 16:00">
+                                                                        </p></label></div>
+                                                            <div class="calendar-box ">
+                                    <div class="time">16:30</div>
+                                    <label class="status" style="display: block;">
+                                            <p>disponible</p><p>
+                                        <input class="selectHour" type="checkbox" name="selected_slots[]" value="2024-08-30 16:30">
+                                                                        </p></label></div>
+                                                            <div class="calendar-box ">
+                                    <div class="time">17:00</div>
+                                    <label class="status" style="display: block;">
+                                            <p>disponible</p><p>
+                                        <input class="selectHour" type="checkbox" name="selected_slots[]" value="2024-08-30 17:00">
+                                                                        </p></label></div>
+                                                            <div class="calendar-box ">
+                                    <div class="time">17:30</div>
+                                    <label class="status" style="display: block;">
+                                            <p>disponible</p><p>
+                                        <input class="selectHour" type="checkbox" name="selected_slots[]" value="2024-08-30 17:30">
+                                                                        </p></label></div>
+                                                            <div class="calendar-box ">
+                                    <div class="time">18:00</div>
+                                    <label class="status" style="display: block;">
+                                            <p>disponible</p><p>
+                                        <input class="selectHour" type="checkbox" name="selected_slots[]" value="2024-08-30 18:00">
+                                                                        </p></label></div>
+                                                            <div class="calendar-box ">
+                                    <div class="time">18:30</div>
+                                    <label class="status" style="display: block;">
+                                            <p>disponible</p><p>
+                                        <input class="selectHour" type="checkbox" name="selected_slots[]" value="2024-08-30 18:30">
+                                                                        </p></label></div>
+                                                            <div class="calendar-box ">
+                                    <div class="time">19:00</div>
+                                    <label class="status" style="display: block;">
+                                            <p>disponible</p><p>
+                                        <input class="selectHour" type="checkbox" name="selected_slots[]" value="2024-08-30 19:00">
+                                                                        </p></label></div>
+                                                            <div class="calendar-box ">
+                                    <div class="time">19:30</div>
+                                    <label class="status" style="display: block;">
+                                            <p>disponible</p><p>
+                                        <input class="selectHour" type="checkbox" name="selected_slots[]" value="2024-08-30 19:30">
+                                                                        </p></label></div>
+                                                            <div class="calendar-box ">
+                                    <div class="time">20:00</div>
+                                    <label class="status" style="display: block;">
+                                            <p>disponible</p><p>
+                                        <input class="selectHour" type="checkbox" name="selected_slots[]" value="2024-08-30 20:00">
+                                                                        </p></label></div>
+                                                            <div class="calendar-box ">
+                                    <div class="time">20:30</div>
+                                    <label class="status" style="display: block;">
+                                            <p>disponible</p><p>
+                                        <input class="selectHour" type="checkbox" name="selected_slots[]" value="2024-08-30 20:30">
+                                                                        </p></label></div>
+                                                            <div class="calendar-box ">
+                                    <div class="time">21:00</div>
+                                    <label class="status" style="display: block;">
+                                            <p>disponible</p><p>
+                                        <input class="selectHour" type="checkbox" name="selected_slots[]" value="2024-08-30 21:00">
+                                                                        </p></label></div>
+                                                    </div>
+
+                                            </form>
+                </div>
+            </div>
+        </div>
+                </div>
+            </div>
+    </div></section>
+    
+<footer class="  ">
+  <div class="mw-1320 m-auto my-3">
+    <div class="d-flex fw-wrap g-1 jc-se  ">
+      <div class="p-2 my-1 ">
+      <h3><strong>Espace Shambaya</strong></h3>
+      <div class="p-1 text-center my-3">
+                <a class="btn p-1" href="http://localhost/Module_R%c3%a9servation/index.php?room_id=&amp;start_date=2024-08-30&amp;pays=78#"> <img class="icon" src="./index_files/facebook.svg" alt="icon_fcb" width="30"></a>
+                <a class="btn p-1" href="http://localhost/Module_R%c3%a9servation/index.php?room_id=&amp;start_date=2024-08-30&amp;pays=78#"> <img class="icon" src="./index_files/youtube.svg" alt="icon_youtube" width="30"></a>
+                <a class="btn p-1" href="http://localhost/Module_R%c3%a9servation/index.php?room_id=&amp;start_date=2024-08-30&amp;pays=78#"> <img class="icon" src="./index_files/instagram.svg" alt="icon_instagram" width="30"></a>
+            </div>
+
+      </div>
+      <div class="p-2 my-1 ">
+       <h3><strong>Plan du site</strong></h3>
+        <ul class="list-unstyled">
+          <li><a href="http://localhost/Module_R%c3%a9servation/index.php?room_id=&amp;start_date=2024-08-30&amp;pays=78#">Accueil</a></li>
+          <li><a href="http://localhost/Module_R%c3%a9servation/index.php?room_id=&amp;start_date=2024-08-30&amp;pays=78#">Profil</a></li>
+          <li><a href="http://localhost/Module_R%c3%a9servation/index.php?room_id=&amp;start_date=2024-08-30&amp;pays=78#">Mes réservations</a></li>
+          <li><a href="http://localhost/Module_R%c3%a9servation/index.php?room_id=&amp;start_date=2024-08-30&amp;pays=78#">Inscription</a></li>
+        </ul>
+      </div>
+      <div class="p-2 my-1 ">
+        <h3><strong>Email</strong></h3>
+        <ul class="list-unstyled">
+          <li>espaceshambaya@gmail.com</li>
+        </ul>
+        <h3><strong>Addresse</strong></h3>
+        <ul class="list-unstyled">
+          <li>260 voie Atlas   –   Athélia 3   –   13600 La Ciotat</li>
+      </ul></div>
+      <div class="p-2 ">
+        <h3><strong>Horaires d'ouverture</strong></h3>
+      
+        <p class="">Lundi: 09.00 – 17.30</p>
+        <p class="">Mardi: 09.00 – 17.30</p>
+        <p class="">Mercredi: 09.00 – 17.30</p>
+        <p class="">Jeudi: 09.00 – 17.30</p>
+        <p class="">Vendredi: 09.00 – 17.30</p>
+        <p class="">Samedi, Dimanche: Fermé</p>
+      </div>
+    </div>
+  </div>
+  <div> <p>Copyright © 2023 | Powered by</p> </div>
+</footer>
+
+
+<script src="./index_files/bootstrap.bundle.min.js.téléchargement" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script defer="">
+
+    // Sélectionne tous les éléments avec la classe "calendar-box" et les stocke dans la variable selectHours
+    const selectHours = document.querySelectorAll(".calendar-box");
+
+    // Parcourt chaque élément selectHours
+    selectHours.forEach(element => {
+        // Ajoute un écouteur d'événement "click" à chaque élément
+        element.addEventListener("click", (e) => {
+           
+
+            // Ajoute ou supprime la classe "active" de l'élément courant
+            e.currentTarget.classList.toggle("active");
+
+            // Sélectionne l'élément <input> à l'intérieur de l'élément courant
+            const input = e.currentTarget.querySelector("input");
+
+            // Vérifie si l'élément <input> a été trouvé
+            if (input !== null) {
+                // Inverse la valeur de la propriété "checked" de l'élément <input>
+                input.checked = !input.checked;
+            }
+        })
+    });
+    
+</script>
+<webchatgpt-custom-element-cd51a0ea-3d80-40ee-9be8-ca9f36290fda id="webchatgpt-snackbar" style="color: rgb(255, 255, 255);"><template shadowrootmode="open"><style id="webchatgpt-snackbar-container-emotion-style"></style><div id="webchatgpt-snackbar-container" style="z-index: 2147483647;"></div></template></webchatgpt-custom-element-cd51a0ea-3d80-40ee-9be8-ca9f36290fda></body></html>
